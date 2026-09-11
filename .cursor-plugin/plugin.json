@@ -9,7 +9,6 @@
   "publisher": "Aha! Labs Inc.",
   "homepage": "https://www.aha.io",
   "repository": "https://github.com/aha-app/aha-cursor",
-  "license": "MIT",
   "keywords": ["aha", "product-development", "product-management", "mcp"],
   "logo": "assets/logo.png",
   "mcpServers": "./mcp.json",

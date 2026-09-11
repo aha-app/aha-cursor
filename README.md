@@ -15,9 +15,7 @@ Connect Cursor to your Aha! account through the official hosted Aha! MCP server.
 3. Open the Aha! MCP server in Cursor and select **Connect**.
 4. Complete the Aha! sign-in and authorization flow in your browser.
 
-The plugin connects to `https://<subdomain>.aha.io/api/v1/mcp`. Authentication uses OAuth, so no API key is stored in this repository or entered into the plugin configuration.
-
-To use a different Aha! account, update **Aha! account subdomain** under **Plugins → Configure**, then reconnect the MCP server.
+The plugin connects to `https://<subdomain>.aha.io/api/v1/mcp`.
 
 ## Local testing
 
@@ -29,7 +27,3 @@ ln -s "$(pwd)" ~/.cursor/plugins/local/aha
 ```
 
 Restart Cursor or run **Developer: Reload Window**, then confirm that Aha! appears under **Customize** and that its MCP server can connect.
-
-## License
-
-This project is available under the [MIT License](LICENSE).
