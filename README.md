@@ -19,11 +19,13 @@ The plugin connects to `https://<subdomain>.aha.io/api/v1/mcp`.
 
 ## Local testing
 
-Clone this repository, then link it into Cursor's local plugin directory:
+Clone this repository, change into its root directory, then copy it into Cursor's local plugin directory. Use a real directory rather than a symlink so Cursor accepts the local plugin.
 
 ```sh
 mkdir -p ~/.cursor/plugins/local
-ln -s "$(pwd)" ~/.cursor/plugins/local/aha
+unlink ~/.cursor/plugins/local/aha 2>/dev/null || true
+mkdir -p ~/.cursor/plugins/local/aha
+rsync -a --exclude='.git/' ./ ~/.cursor/plugins/local/aha/
 ```
 
-Restart Cursor or run **Developer: Reload Window**, then confirm that Aha! appears under **Customize** and that its MCP server can connect.
+Restart Cursor or run **Developer: Reload Window**, then confirm that Aha! appears under **Customize → Plugins** and that its MCP server appears under **Customize → MCPs**.
