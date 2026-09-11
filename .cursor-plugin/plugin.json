@@ -10,7 +10,7 @@
   "homepage": "https://www.aha.io",
   "repository": "https://github.com/aha-app/aha-cursor",
   "keywords": ["aha", "product-development", "product-management", "mcp"],
-  "logo": "assets/logo.png",
+  "logo": "assets/logo.svg",
   "mcpServers": "./mcp.json",
   "variables": {
     "type": "object",
