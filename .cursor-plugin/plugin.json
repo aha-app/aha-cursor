@@ -1,0 +1,28 @@
+{
+  "name": "aha",
+  "displayName": "Aha!",
+  "version": "1.0.0",
+  "description": "Search, read, and manage your Aha! records from Cursor.",
+  "author": {
+    "name": "Aha! Labs Inc."
+  },
+  "publisher": "Aha! Labs Inc.",
+  "homepage": "https://www.aha.io",
+  "repository": "https://github.com/aha-app/aha-cursor",
+  "license": "MIT",
+  "keywords": ["aha", "product-development", "product-management", "mcp"],
+  "logo": "assets/logo.png",
+  "mcpServers": "./mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "AHA_SUBDOMAIN": {
+        "type": "string",
+        "title": "Aha! account subdomain",
+        "description": "The subdomain in your Aha! account URL (for example, 'acme' for acme.aha.io).",
+        "minLength": 1
+      }
+    },
+    "required": ["AHA_SUBDOMAIN"]
+  }
+}

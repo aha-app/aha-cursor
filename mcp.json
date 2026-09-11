@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "aha": {
+      "url": "https://${AHA_SUBDOMAIN}.aha.io/api/v1/mcp"
+    }
+  }
+}
